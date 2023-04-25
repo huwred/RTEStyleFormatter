@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ContentTargetFolders>/</ContentTargetFolders>
+    <Product>Umbraco.Community.RTEStyleFormatter</Product>
+    <PackageId>Umbraco.Community.RTEStyleFormatter</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Title>Umbraco RTE StyleFormats</Title>
+    <Description>Keep a nicely formatted json file for the RTE style_formats in appsettings</Description>
+    <Copyright>Huw Reddick</Copyright>
+    <PackageTags>umbraco-marketplace umbraco plugin package</PackageTags>
+    <RepositoryUrl>https://github.com/huwred/RTEStyleFormatter</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="10.0.0" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Plugins\RTEStyleFormatter\**" ExcludeFromSingleFile="true" CopyToPublishDirectory="PreserveNewest" />
+    <None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="App_Plugins\RTEStyleFormatter\RTE_style_formats.json" />
+  </ItemGroup>
+</Project>

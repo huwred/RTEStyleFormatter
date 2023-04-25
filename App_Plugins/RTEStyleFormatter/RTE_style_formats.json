@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Headings",
+    "items": [
+      {
+        "title": "Heading h3",
+        "block": "h3"
+      },
+      {
+        "title": "Heading h4",
+        "block": "h4"
+      },
+      {
+        "title": "Heading h5",
+        "block": "h5"
+      },
+      {
+        "title": "Heading h6",
+        "block": "h6"
+      }
+    ]
+  },
+  {
+    "title": "Inline",
+    "items": [
+      {
+        "title": "Bold",
+        "block": "strong"
+      },
+      {
+        "title": "Italics",
+        "block": "em"
+      },
+      {
+        "title": "Underline",
+        "inline": "span",
+        "attributes": {
+          "style": "text-decoration: underline;"
+        }
+      },
+      {
+        "title": "Strikethrough",
+        "inline": "span",
+        "attributes": {
+          "style": "text-decoration: line-through;"
+        }
+      },
+      {
+        "title": "Superscript",
+        "block": "sup"
+      },
+      {
+        "title": "Subscript",
+        "block": "sub"
+      }
+    ]
+  },
+  {
+    "title": "Blocks",
+    "items": [
+      {
+        "title": "Blockquote",
+        "block": "blockquote"
+      },
+      {
+        "title": "pre",
+        "block": "pre"
+      }
+    ]
+  }
+]

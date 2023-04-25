@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <RTEStyleFormatterContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\RTEStyleFormatter\**\*.*</RTEStyleFormatterContentFilesPath>
+  </PropertyGroup>
+
+  <Target Name="CopyRTEStyleFormatterAssets" BeforeTargets="Build">
+    <ItemGroup>
+      <RTEStyleFormatterContentFiles Include="$(RTEStyleFormatterContentFilesPath)" />
+    </ItemGroup>
+    <Message Text="Copying RTEStyleFormatter files: $(RTEStyleFormatterContentFilesPath) - #@(RTEStyleFormatterContentFiles->Count()) files" Importance="high" />
+    <Copy SourceFiles="@(RTEStyleFormatterContentFiles)" DestinationFiles="@(RTEStyleFormatterContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\RTEStyleFormatter\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="ClearRTEStyleFormatterAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <RTEStyleFormatterDir Include="$(MSBuildProjectDirectory)\App_Plugins\RTEStyleFormatter\" />
+    </ItemGroup>
+    <Message Text="Clear old RTEStyleFormatter data" Importance="high" />
+    <RemoveDir Directories="@(RTEStyleFormatterDir)" />
+  </Target>
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTEStyleFormatter", "RTEStyleFormatter.csproj", "{60AA77BC-348F-4D2B-B6E0-C5E15A002DB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60AA77BC-348F-4D2B-B6E0-C5E15A002DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60AA77BC-348F-4D2B-B6E0-C5E15A002DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60AA77BC-348F-4D2B-B6E0-C5E15A002DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60AA77BC-348F-4D2B-B6E0-C5E15A002DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6F67781-1C21-40BC-BA9C-55DF7E2152C2}
+	EndGlobalSection
+EndGlobal
