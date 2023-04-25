@@ -55,7 +55,8 @@ Sample file
       }
     ]
   }
-]```
+]
+```
 ## License
 Copyright © 2023 Huw Reddick, and other contributors.
 
