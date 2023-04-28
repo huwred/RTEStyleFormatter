@@ -7,7 +7,7 @@
     "ImageUrl": "https://our.umbraco.com/media/upload/af865e33-184c-4930-a90b-93b05c2a4d0c/me.jpg?width=250&height=250&mode=crop&upscale=true"
 
   },
-  "Category": "Themes & Starter Kits",
+  "Category": "Developer Tools",
   "Description": "Easy to edit json file for RTE style_formats string in appsettings.json",
   "LicenseTypes": [ "Free" ],
   "IssueTrackerUrl": "https://github.com/huwred/RTEStyleFormatter/issues",
