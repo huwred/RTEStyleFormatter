@@ -28,5 +28,6 @@
 
   <ItemGroup>
     <None Remove="App_Plugins\RTEStyleFormatter\RTE_style_formats.json" />
+    <Content Include="README.md" />
   </ItemGroup>
 </Project>
