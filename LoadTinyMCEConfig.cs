@@ -17,7 +17,7 @@ namespace RTEStyleFormatter
         }
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            string settingsFile = "App_Plugins/TinyMCEStyleFormatter/RTE_style_formats.json";
+            string settingsFile = "App_Plugins/RTEStyleFormatter/RTE_style_formats.json";
             //does the json file exist?
             //if yes, minify it, escape the " and set the value in appsettings.json
             var styleSettings = _env.ContentRootFileProvider.GetFileInfo(settingsFile);

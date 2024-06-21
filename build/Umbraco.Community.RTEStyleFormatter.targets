@@ -8,7 +8,8 @@
       <RTEStyleFormatterContentFiles Include="$(RTEStyleFormatterContentFilesPath)" />
     </ItemGroup>
     <Message Text="Copying RTEStyleFormatter files: $(RTEStyleFormatterContentFilesPath) - #@(RTEStyleFormatterContentFiles->Count()) files" Importance="high" />
-    <Copy SourceFiles="@(RTEStyleFormatterContentFiles)" DestinationFiles="@(RTEStyleFormatterContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\RTEStyleFormatter\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(RTEStyleFormatterContentFiles)" DestinationFiles="@(RTEStyleFormatterContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\RTEStyleFormatter\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true"  
+          Condition="%(Filename)!='' AND (!Exists('$(MSBuildProjectDirectory)\App_Plugins\RTEStyleFormatter\%(RecursiveDir)%(Filename)%(Extension)') OR $([System.DateTime]::Parse('%(ModifiedTime)').Ticks) &gt; $([System.IO.File]::GetLastWriteTime('$(MSBuildProjectDirectory)\App_Plugins\RTEStyleFormatter\%(RecursiveDir)%(Filename)%(Extension)').Ticks))"/>
   </Target>
 
   <Target Name="ClearRTEStyleFormatterAssets" BeforeTargets="Clean">

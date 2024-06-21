@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTEStyleFormatter", "RTEStyleFormatter.csproj", "{60AA77BC-348F-4D2B-B6E0-C5E15A002DB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UmbracoProject1", "..\UmbracoProject1\UmbracoProject1.csproj", "{A24279C0-2302-450F-8C11-DC3850FBF0DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{60AA77BC-348F-4D2B-B6E0-C5E15A002DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60AA77BC-348F-4D2B-B6E0-C5E15A002DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60AA77BC-348F-4D2B-B6E0-C5E15A002DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24279C0-2302-450F-8C11-DC3850FBF0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24279C0-2302-450F-8C11-DC3850FBF0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24279C0-2302-450F-8C11-DC3850FBF0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24279C0-2302-450F-8C11-DC3850FBF0DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
