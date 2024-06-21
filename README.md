@@ -1,5 +1,13 @@
 # RTEStyleFormatter
 
+## Update 1.0.3 
+
+Removed UTF8 file encoding
+
+Changed Json serializer (removes unnecesary encoding)
+
+
+
 [![Platform](https://img.shields.io/badge/Umbraco-10.0+-%233544B1?style=flat&logo=umbraco)](https://umbraco.com/products/umbraco-cms/)
 
 **Umbraco.Community.RTEStyleFormatter** easy to edit json file for RTE style_formats in appsettings.json

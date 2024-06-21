@@ -38,17 +38,16 @@ namespace RTEStyleFormatter
             
             var updatedConfigDict = UpdateJson(key, value, config);
             // After receiving the dictionary with updated key value pair, we serialize it back into json.
-            var updatedJson = JsonSerializer.Serialize(updatedConfigDict, new JsonSerializerOptions { WriteIndented = true ,});
 
-            string bJsonString = System.Text.Json.JsonSerializer.Serialize(
+            string updatedJson = JsonSerializer.Serialize(
              value: updatedConfigDict,
-             options: new System.Text.Json.JsonSerializerOptions
+             options: new JsonSerializerOptions
              { 
                  WriteIndented = true,
-                   Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+                 Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
               });
 
-            File.WriteAllText(settinsgFileName, bJsonString);
+            File.WriteAllText(settinsgFileName, updatedJson);
         }
 
 
